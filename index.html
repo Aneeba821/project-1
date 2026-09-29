@@ -3,18 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Project</title>
+    <title>Digital Craft</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
 
-    <div class="container">
-        <h1>Welcome to My Website</h1>
-        <p id="message">Click the button below.</p>
+    <header class="site-header">
+        <div class="logo">DigitalCraft</div>
 
-        <button onclick="changeMessage()">Click Me</button>
-    </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <button id="menuBtn">Menu</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="subtitle">BUILD THE FUTURE</p>
+
+                <h1>You Are The Architect.</h1>
+
+                <p>
+                    Create meaningful digital experiences with a clean,
+                    responsive and user-friendly interface.
+                </p>
+
+                <button id="startBtn" class="primary-btn">
+                    Get Started
+                </button>
+            </div>
+
+            <div class="hero-card">
+                <div class="screen">
+                    <span>Digital</span>
+                    <strong>Experience</strong>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="section-heading">
+                <p class="subtitle">WHAT WE BUILD</p>
+                <h2>Simple. Flexible. Responsive.</h2>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <h3>Responsive Design</h3>
+                    <p>
+                        Interfaces that adapt smoothly to mobile,
+                        tablet and desktop screens.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Clean Structure</h3>
+                    <p>
+                        Semantic HTML creates a clear structure
+                        for users, browsers and accessibility tools.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Interactive UI</h3>
+                    <p>
+                        Basic JavaScript adds useful interaction
+                        and improves the user experience.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>Designed for every screen.</h2>
+            <p>
+                This project demonstrates a mobile-first responsive
+                architecture using HTML5, CSS3 and JavaScript.
+            </p>
+        </section>
+
+    </main>
+
+        <footer>
+        <p>&copy; 2026 Project 1. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
