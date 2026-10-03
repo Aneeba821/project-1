@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Craft</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -13,12 +12,19 @@
     <header class="site-header">
         <div class="logo">DigitalCraft</div>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#features">Features</a>
-            <a href="#about">About</a>
-            <button id="menuBtn">Menu</button>
-        </nav>
+       <nav aria-label="Primary navigation">
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+
+    <button
+        id="menuBtn"
+        type="button"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+    </button>
+</nav>
     </header>
 
     <main>
